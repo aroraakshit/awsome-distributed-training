@@ -1,9 +1,9 @@
-FROM public.ecr.aws/docker/library/ubuntu:20.04
+FROM public.ecr.aws/docker/library/ubuntu:22.04
 
-ARG EFA_INSTALLER_VERSION=1.30.0
-ARG NODE_EXPORTER_VERSION=v1.6.1
-ARG PROCFS_EXPORTER_VERSION=v0.12.0
-ARG GOLANG_VERSION=1.21.5
+ARG EFA_INSTALLER_VERSION=1.38.1
+ARG NODE_EXPORTER_VERSION=v1.9.0
+ARG PROCFS_EXPORTER_VERSION=v0.16.0
+ARG GOLANG_VERSION=1.24.1
 
 # install go
 RUN apt update && apt install curl git build-essential -y
